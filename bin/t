@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+# 使い方:
+#   bin/t        全問題のテストを実行
+#   bin/t 1      0001-* のテストを実行
+#   bin/t 1 20   複数指定も可
+
+root = File.expand_path("..", __dir__)
+pattern =
+  if ARGV.empty?
+    ["#{root}/problems/*/test_*.rb"]
+  else
+    ARGV.map { |n| "#{root}/problems/#{format('%04d', n.to_i)}-*/test_*.rb" }
+  end
+
+files = pattern.flat_map { |p| Dir.glob(p) }.sort
+if files.empty?
+  warn "テストが見つかりません: #{ARGV.join(' ')}"
+  exit 1
+end
+
+failed = files.reject do |f|
+  puts "\n=== #{File.basename(File.dirname(f))} ==="
+  $stdout.flush
+
+  # 見えない制御文字（Backspace 等）が混入していないかチェック
+  sol = File.join(File.dirname(f), "solution.rb")
+  if File.exist?(sol)
+    File.readlines(sol).each_with_index do |line, i|
+      bad = line.chomp.chars.select { |c| c.ord < 32 && c != "\t" }
+      next if bad.empty?
+
+      names = bad.map { |c| format("\\x%02X", c.ord) }.uniq.join(", ")
+      shown = line.chomp.gsub(/[\x00-\x08\x0B-\x1F]/, "␈")
+      warn "⚠️  solution.rb #{i + 1}行目に見えない文字 (#{names}) があります: #{shown}"
+      warn "    → その行を消して打ち直してください"
+    end
+  end
+
+  system("ruby", "-I#{root}/lib", f)
+end
+
+puts
+if failed.empty?
+  puts "✅ すべて通過 (#{files.size} 問)"
+else
+  puts "❌ 失敗: #{failed.map { |f| File.basename(File.dirname(f)) }.join(', ')}"
+  exit 1
+end
