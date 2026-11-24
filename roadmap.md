@@ -12,7 +12,7 @@
 ## 2. 二つのポインタ（両端 or 2本の指で走査）
 - [x] 344. Reverse String
 - [x] 125. Valid Palindrome
-- [~] 283. Move Zeroes
+- [x] 283. Move Zeroes
 - [~] 88. Merge Sorted Array
 
 ## 3. スライディングウィンドウ／一回の走査で最良を更新
