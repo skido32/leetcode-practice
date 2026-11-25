@@ -17,7 +17,7 @@
 
 ## 3. スライディングウィンドウ／一回の走査で最良を更新
 - [~] 121. Best Time to Buy and Sell Stock
-- [ ] 643. Maximum Average Subarray I
+- [~] 643. Maximum Average Subarray I
 
 ## 4. スタックとキュー
 - [ ] 20. Valid Parentheses
