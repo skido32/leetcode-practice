@@ -20,7 +20,7 @@
 - [~] 643. Maximum Average Subarray I
 
 ## 4. スタックとキュー
-- [ ] 20. Valid Parentheses
+- [~] 20. Valid Parentheses
 - [ ] 232. Implement Queue using Stacks
 
 ## 5. 二分探索
