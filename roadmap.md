@@ -13,7 +13,7 @@
 - [x] 344. Reverse String
 - [x] 125. Valid Palindrome
 - [x] 283. Move Zeroes
-- [~] 88. Merge Sorted Array
+- [x] 88. Merge Sorted Array
 
 ## 3. スライディングウィンドウ／一回の走査で最良を更新
 - [~] 121. Best Time to Buy and Sell Stock

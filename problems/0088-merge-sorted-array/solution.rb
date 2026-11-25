@@ -10,11 +10,11 @@ def merge(nums1, m, nums2, n)
   while j >= 0
     if i >= 0 && nums1[i] > nums2[j]
       nums1[k] = nums1[i]
-      i = i - 1
+      i -= 1
     else
       nums1[k] = nums2[j]
-      j = j - 1
+      j -= 1
     end
-    k = k - 1
+    k -= 1
   end
 end
