@@ -21,7 +21,7 @@
 
 ## 4. スタックとキュー
 - [~] 20. Valid Parentheses
-- [ ] 232. Implement Queue using Stacks
+- [~] 232. Implement Queue using Stacks
 
 ## 5. 二分探索
 - [ ] 704. Binary Search
