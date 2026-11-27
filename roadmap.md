@@ -25,7 +25,7 @@
 
 ## 5. 二分探索
 - [~] 704. Binary Search
-- [ ] 35. Search Insert Position
+- [x] 35. Search Insert Position
 - [ ] 278. First Bad Version
 
 ## 6. 連結リスト

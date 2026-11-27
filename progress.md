@@ -20,3 +20,4 @@
 | 2026-11-27 | 232. Implement Queue using Stacks | Easy | スタック（2本でキュー） | ヒントあり（段階2 + 問いかけ）→ 発展（ならして O(1)）まで | — | 配列の = はコピーではない、@b が空のときだけ移す |
 | 2026-11-28 | 704. Binary Search | Easy | 二分探索 | ヒントあり（段階3） | — | 配列を slice で切ると番号がずれる・O(n)。left / right の番号で範囲を表す |
 | 2026-11-28 | 121. Best Time to Buy and Sell Stock（復習） | Easy | ここまでの最小値を持ち歩く | 自力（/hint なし・一発） | — | ブロック変数 p が再発、メソッド名と同じ変数名 |
+| 2026-11-28 | 35. Search Insert Position | Easy | 二分探索 | 自力（/hint なし。問いかけで3か所修正） | — | = と ==、mid の計算、抜けたあとは left が入れる場所 |
