@@ -1,15 +1,15 @@
 # @param {Integer[]} prices
 # @return {Integer}
 def max_profit(prices)
-  low_price = prices[0]
-  max = 0
-  prices.each do |p|
-    if max < p - low_price
-      max = p - low_price
+  min_price = prices[0]
+  m_profit = 0
+  prices.each do |price|
+    if price - min_price > m_profit
+      m_profit = price - min_price
     end
-    if low_price > p
-      low_price = p
+    if min_price > price
+      min_price = price
     end
   end
-  return max
+  return m_profit
 end

@@ -16,7 +16,7 @@
 - [x] 88. Merge Sorted Array
 
 ## 3. スライディングウィンドウ／一回の走査で最良を更新
-- [~] 121. Best Time to Buy and Sell Stock
+- [x] 121. Best Time to Buy and Sell Stock
 - [~] 643. Maximum Average Subarray I
 
 ## 4. スタックとキュー
