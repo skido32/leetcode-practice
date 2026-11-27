@@ -24,7 +24,7 @@
 - [~] 232. Implement Queue using Stacks
 
 ## 5. 二分探索
-- [ ] 704. Binary Search
+- [~] 704. Binary Search
 - [ ] 35. Search Insert Position
 - [ ] 278. First Bad Version
 
